@@ -37,16 +37,16 @@ use the -l option of the recode program.
 
 
 Pour utiliser fortunes-fr, vous aurez besoin du programme fortune, qui est 
-généralement distribué dans un paquet appelé fortune-mod.
+gÃ©nÃ©ralement distribuÃ© dans un paquet appelÃ© fortune-mod.
 
 Durant l'installation, vous aurez aussi besoin d'avoir les programmes suivants
-installés :
+installÃ©s :
 * awk, gawk ou mawk
-* strfile (généralement distribué en même temps que fortune)
+* strfile (gÃ©nÃ©ralement distribuÃ© en mÃªme temps que fortune)
 * recode (optionel)
 
-Pour installer fortunes-fr sur votre système, décompressez l'archive dans un 
-répertoire, puis entrez les commandes suivantes :
+Pour installer fortunes-fr sur votre systÃ¨me, dÃ©compressez l'archive dans un 
+rÃ©pertoire, puis entrez les commandes suivantes :
 % cd fortunes-fr-0.01
 % ./configure
 % make
@@ -54,18 +54,18 @@ obtenez les droits de root avec "su"
 % make install
 
 
-Les citations seront alors installées dans /usr/local/share/games/fortunes. 
-La documentation sera installée dans /usr/share/doc/fortunes-fr. Si vous 
-souhaitez changer les répertoires d'installation, vous pouvez exécuter le 
+Les citations seront alors installÃ©es dans /usr/local/share/games/fortunes. 
+La documentation sera installÃ©e dans /usr/share/doc/fortunes-fr. Si vous 
+souhaitez changer les rÃ©pertoires d'installation, vous pouvez exÃ©cuter le 
 script configure avec l'argument --prefix ou --with-fortunesdir. Pour plus 
-d'information, exécutez ./configure --help.
+d'information, exÃ©cutez ./configure --help.
 
-D'autre part, les fichiers sources des citations sont codés au format 
-ISO-8859-15, et sont installés tel quels par défaut. Si vous souhaitez 
-utiliser un autre format, vous pouvez le spécifier en exécutant le script 
-configure avec l'argument --with-charset=charset, ou charset représente le 
-format de codage à utiliser. Pour avoir la possibilité d'utiliser cette cette
-option, vous devez avoir le programme recode d'installé sur votre système. 
+D'autre part, les fichiers sources des citations sont codÃ©s au format 
+ISO-8859-15, et sont installÃ©s tel quels par dÃ©faut. Si vous souhaitez 
+utiliser un autre format, vous pouvez le spÃ©cifier en exÃ©cutant le script 
+configure avec l'argument --with-charset=charset, ou charset reprÃ©sente le 
+format de codage Ã  utiliser. Pour avoir la possibilitÃ© d'utiliser cette cette
+option, vous devez avoir le programme recode d'installÃ© sur votre systÃ¨me. 
 Pour connaitre la liste des formats disponibles, utilisez l'option -l du 
 programme recode.
 

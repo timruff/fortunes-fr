@@ -3,7 +3,7 @@
 	* Ajout du Guide du Debianiste Pervers, citations issues de 
 	  debian-french, debian-devel-french et debian-user-french
 	* Suppression de la ligne vide entre la citation et le nom de
-	  l'auteur, pour Èviter les citations trop longues.
+	  l'auteur, pour √©viter les citations trop longues.
 	* Ajout de fr.rec.photo/, contribution de Benoit Friry. 113 citations.
 	* Ajout de haiku/, contribution de Benoit Friry. 16 citations.
 	* Ajout de citations :
@@ -13,11 +13,11 @@
 	  - 1 citation de Michel Serres
 	  - 3 citations de Platon
 	  - 1 citation d'Henri Michaux
-	  - 2 citation de GalilÈe
+	  - 2 citation de Galil√©e
 	  - 1 citation d'Alexandre Dumas
 	  - 4 citations de Ludwig von Wittgenstein
 	  - 6 citations d'Euclide
-	  - 1 citation de CicÈron
+	  - 1 citation de Cic√©ron
 	  - 1 citation de Galois
 	* Ajout d'un test cherchant les lignes ne contenant que des 
 	  espaces.
@@ -28,7 +28,7 @@
 	  - 1 citation de Douglas Adams
 	  - 1 citation de Philip Kindred Dick
 	  - 1 citation de Bernard Werber
-	  - 2 citations d'AmÈlie Nothomb
+	  - 2 citations d'Am√©lie Nothomb
 	  - 3 citations d'Henri Cartier-Bresson
 	  - 8 citations de Jacques-Henri Lartigue
 	  - 1 citation de Vladimir Nabokov
@@ -41,68 +41,68 @@
 	  - 1 citation de Georges Courteline
 	  - 2 citations de Jules Renard
 	  - 1 citation de Coluche
-	  - 1 citation de Jacques PrÈvert
-	  - 1 citation de SÈnËque
+	  - 1 citation de Jacques Pr√©vert
+	  - 1 citation de S√©n√®que
 	  - 3 citations d'Alfred Korzybski
 	  - 1 citation de Georges Perec
 	  - 1 citation de Raymond Queneau
 	  - 1 citation de Sylvie Testud
-	  - 1 citation de Julio Cort·zar
+	  - 1 citation de Julio Cort√°zar
 	  - 1 citation de Roland Barthes
 	  - 1 citation de Harry Laus
-	  - 1 citation de LÈo FerrÈ
+	  - 1 citation de L√©o Ferr√©
 
 ***** Sortie de fortunes-fr 0.01 *****
 
-03/05/2004  FranÁois Maltey <Francois.Maltey@enst-bretagne.fr>
+03/05/2004  Fran√ßois Maltey <Francois.Maltey@enst-bretagne.fr>
 
 	* Ajout des dates de naissance des auteurs suivants: Gilbert
 	  Cesbron, Alain, Albert Camus, Albert Memmi, Alexandre Dumas,
 	  Alexandre Dumas fils, Alfred de Musset, Alphonse de Lamartine,
-	  Anatole France, AndrÈ DhÙtel, AndrÈ Gide, AndrÈ Malraux,
-	  Antoine de Saint-ExupÈry.
-	* DÈplacement de antiphane, alexandre_soljenitsyne, aristote et
+	  Anatole France, Andr√© Dh√¥tel, Andr√© Gide, Andr√© Malraux,
+	  Antoine de Saint-Exup√©ry.
+	* D√©placement de antiphane, alexandre_soljenitsyne, aristote et
 	  socrate dans philosophie.
-	* SÈparation de littÈrature en littÈrature franÁasie et 
-	  littÈrature ÈtrangËre.
-	* DÈplacement de friedrich_nietzsche dans philosophie.
+	* S√©paration de litt√©rature en litt√©rature fran√ßasie et 
+	  litt√©rature √©trang√®re.
+	* D√©placement de friedrich_nietzsche dans philosophie.
 	* Correction d'un nom de l'auteur apparaissant deux fois dans 
 	  francois_rabelais
 
 16/03/2004  Aurelien Jarno <aurelien@aurel32.net>
 
-	* …criture des scripts.
+	* √âcriture des scripts.
 
 16/03/2004  Aurelien Jarno <aurelien@aurel32.net>
 
-	* CrÈation de informatique/fai.
+	* Cr√©ation de informatique/fai.
 
 07/03/2004  Aurelien Jarno <aurelien@aurel32.net>
 
-	* VÈrification des citations au dictionnaire orthographique.
+	* V√©rification des citations au dictionnaire orthographique.
 
-10/08/2002  FranÁois Maltey <Francois.Maltey@enst-bretagne.fr>
+10/08/2002  Fran√ßois Maltey <Francois.Maltey@enst-bretagne.fr>
 
-	* VÈrification des citations de La Fontaine ‡ l'aide du livre de La
-	  PlÈiade. 121 citations.
+	* V√©rification des citations de La Fontaine √† l'aide du livre de La
+	  Pl√©iade. 121 citations.
 
-11/07/2002  FranÁois Maltey <Francois.Maltey@enst-bretagne.fr>
+11/07/2002  Fran√ßois Maltey <Francois.Maltey@enst-bretagne.fr>
 
-	* VÈrification des citations de Rabelais ‡ l'aide du livre de La
-	  PlÈiade. 23 citations.
+	* V√©rification des citations de Rabelais √† l'aide du livre de La
+	  Pl√©iade. 23 citations.
 
-12/06/2002  FranÁois Maltey <Francois.Maltey@enst-bretagne.fr>
+12/06/2002  Fran√ßois Maltey <Francois.Maltey@enst-bretagne.fr>
 
-	* VÈrification des citations de La Rochefoucauld ‡ l'aide du livre de
-	  La PlÈiade. 112 citations.
-	* VÈrification des citations de Rutebeuf ‡ l'aide du livre de La 
-	  PlÈiade. 2 citations.
-	* VÈrification des citations de Villon ‡ l'aide du livre de La PlÈiade.
+	* V√©rification des citations de La Rochefoucauld √† l'aide du livre de
+	  La Pl√©iade. 112 citations.
+	* V√©rification des citations de Rutebeuf √† l'aide du livre de La 
+	  Pl√©iade. 2 citations.
+	* V√©rification des citations de Villon √† l'aide du livre de La Pl√©iade.
 	  6 citations.
-	* VÈrification des citations du Romand de Renart ‡ l'aide du livre
-	  de La PlÈiade. 1 citation.
+	* V√©rification des citations du Romand de Renart √† l'aide du livre
+	  de La Pl√©iade. 1 citation.
 
-03/06/2002  FranÁois Maltey <Francois.Maltey@enst-bretagne.fr>
-	* VÈrification des citations de Pascal ‡ l'aide du livre de La 
-	  PlÈiade. 38 citations.
+03/06/2002  Fran√ßois Maltey <Francois.Maltey@enst-bretagne.fr>
+	* V√©rification des citations de Pascal √† l'aide du livre de La 
+	  Pl√©iade. 38 citations.
 
