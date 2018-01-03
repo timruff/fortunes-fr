@@ -1,0 +1,72 @@
+In order to successfully use fortunes-fr, you will need the fortune program 
+which is generally distributed in a package called fortune-mod.
+
+During the installation, you will also have to have the following programs 
+installed:
+* awk, gawk or mawk
+* strfile, (generally distributed in the same archive as fortune)
+* recode (optional)
+
+In order to install fortunes-fr on your system, unpack the archive into a 
+directory and type the following:
+% cd fortunes-fr-0.01
+% ./configure
+% make
+with "su" you get root rights
+% make install
+
+
+The fortunes cookies will be installed in /usr/local/share/games/fortunes.
+The documentation will be installed into /usr/share/doc/fortunes-fr. If you
+want to change the installation directories, you can execute the configure 
+script with the option --prefix or --with-fortunesdir. Run ./configure 
+--help for more information.
+
+Besides, the source files of the fortunes are coded in ISO-8859-15 format, 
+and are installed as they are by default. If you want to use an other format, 
+you can specify it by executing the configure script with the option 
+--with-charset=charset, where charset represents the format to use. To have 
+the possibility to use this option, you should have the recode program 
+installed on your system. To get the list of the supported formats, you can 
+use the -l option of the recode program.
+
+
+
+-----------------------------------------------------------------------------
+
+
+
+Pour utiliser fortunes-fr, vous aurez besoin du programme fortune, qui est 
+généralement distribué dans un paquet appelé fortune-mod.
+
+Durant l'installation, vous aurez aussi besoin d'avoir les programmes suivants
+installés :
+* awk, gawk ou mawk
+* strfile (généralement distribué en même temps que fortune)
+* recode (optionel)
+
+Pour installer fortunes-fr sur votre système, décompressez l'archive dans un 
+répertoire, puis entrez les commandes suivantes :
+% cd fortunes-fr-0.01
+% ./configure
+% make
+obtenez les droits de root avec "su"
+% make install
+
+
+Les citations seront alors installées dans /usr/local/share/games/fortunes. 
+La documentation sera installée dans /usr/share/doc/fortunes-fr. Si vous 
+souhaitez changer les répertoires d'installation, vous pouvez exécuter le 
+script configure avec l'argument --prefix ou --with-fortunesdir. Pour plus 
+d'information, exécutez ./configure --help.
+
+D'autre part, les fichiers sources des citations sont codés au format 
+ISO-8859-15, et sont installés tel quels par défaut. Si vous souhaitez 
+utiliser un autre format, vous pouvez le spécifier en exécutant le script 
+configure avec l'argument --with-charset=charset, ou charset représente le 
+format de codage à utiliser. Pour avoir la possibilité d'utiliser cette cette
+option, vous devez avoir le programme recode d'installé sur votre système. 
+Pour connaitre la liste des formats disponibles, utilisez l'option -l du 
+programme recode.
+
+
