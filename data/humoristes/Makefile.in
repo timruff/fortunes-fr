@@ -282,11 +282,11 @@ count-recursive:
 	@$(AWK) '/^%$$/ {sum +=1} END {printf ("%s %i\n", "$(catname)", sum); }' $(fortunes) >> ../.count
 
 verify:
-	@echo -e "\nVÈrification des fichiers de citations..."
+	@echo -e "\nV√©rification des fichiers de citations..."
 	@for file in $(fortunes) ; do \
-		$(AWK) 'BEGIN { start = 1 }; /^%/ {if ($$0 != "%") print FILENAME": "NR": ERREUR: caractËres supplÈmentaires aprËs le %" ; len = (NR - start) ; if (len > 15) print FILENAME": "start": ERREUR: citation trop longue ("len" lignes)"; start = NR ;} END {if ($$0 != "%") print FILENAME": ERREUR: fichier non terminÈ par un %"}' $$file ; \
-		$(AWK) '{if (length($$0) > 72) print FILENAME": "NR": ERREUR: ligne trop longue ("length($$0)" caractËres)"}' $$file ; \
-		$(AWK) '/^        -/ {print FILENAME": "NR": ERREUR: 8 espaces ‡ remplacer par une tabulation"}' $$file ; \
+		$(AWK) 'BEGIN { start = 1 }; /^%/ {if ($$0 != "%") print FILENAME": "NR": ERREUR: caract√®res suppl√©mentaires apr√®s le %" ; len = (NR - start) ; if (len > 15) print FILENAME": "start": ERREUR: citation trop longue ("len" lignes)"; start = NR ;} END {if ($$0 != "%") print FILENAME": ERREUR: fichier non termin√© par un %"}' $$file ; \
+		$(AWK) '{if (length($$0) > 72) print FILENAME": "NR": ERREUR: ligne trop longue ("length($$0)" caract√®res)"}' $$file ; \
+		$(AWK) '/^        -/ {print FILENAME": "NR": ERREUR: 8 espaces √† remplacer par une tabulation"}' $$file ; \
 		$(AWK) '/^[ \t]*$$/ {print FILENAME": "NR": ERREUR: ligne vide"}' $$file ; \
 	done
 	@ echo -e "\n"
