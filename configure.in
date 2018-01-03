@@ -1,0 +1,70 @@
+dnl Process this file with autoconf to produce a configure script.
+
+# Initialization
+AC_INIT(Makefile.am)
+AM_INIT_AUTOMAKE(fortunes-fr, 0.02)
+
+AC_DEFUN([AC_PATH_PROG_REQUIRE],
+[
+    AC_PATH_PROG($1, $2, no)
+    if test "x$$1" == "xno"; then
+    	AC_MSG_ERROR($2 not found.)
+    fi
+    AC_SUBST($1)
+])
+
+dnl Checks for programs.
+AC_PATH_PROG_REQUIRE(CP, cp, no)
+AC_PATH_PROG_REQUIRE(LN, ln, no)
+AC_PATH_PROG_REQUIRE(RM, rm, no)
+AC_PATH_PROG_REQUIRE(STRFILE, strfile, no)
+
+dnl Options
+AC_ARG_WITH(,)
+AC_ARG_WITH(,[Options:])
+AC_ARG_WITH(fortunesdir, 
+            [AC_HELP_STRING([--with-fortunesdir=DIR], [Directory where to install fortunes data [DATADIR/games/fortunes]])],
+	    [fortunesdir="$withval"],
+	    [fortunesdir='${datadir}/games/fortunes'])
+AC_SUBST(fortunesdir)
+	    
+AC_ARG_WITH(charset, 
+	    [AC_HELP_STRING([--with-charset=charset], [Charset of the generated fortunes (default to ISO-8859-15)])],
+	    [CHARSET="$withval"], 
+	    [CHARSET="default"])
+
+test -z "$CHARSET" && CHARSET=default
+if test "x$CHARSET" != "xdefault"; then
+	AC_PATH_PROG_REQUIRE(RECODE, recode)
+	AC_MSG_CHECKING(whether recode supports $CHARSET charset)
+	if echo "test" | $RECODE ISO-8859-15..$CHARSET 2>/dev/null 1>/dev/null; then
+		AC_MSG_RESULT(yes)
+	else
+		AC_MSG_RESULT(no)
+		AC_MSG_ERROR(recode doesn't support '$CHARSET' charset. Type '$RECODE -l' to see the list of supported charsets.)
+	fi
+fi
+AC_SUBST(CHARSET)
+
+# Substitute configuration variables
+AC_OUTPUT(Makefile \
+	  doc/Makefile
+	  data/Makefile \
+	  data/bd/Makefile \
+	  data/cinema/Makefile \
+	  data/droit/Makefile \
+	  data/fr.rec.photo/Makefile \
+	  data/GDP/Makefile \
+	  data/haiku/Makefile \
+	  data/humoristes/Makefile \
+	  data/humour/Makefile \
+	  data/informatique/Makefile \
+	  data/litterature_etrangere/Makefile \
+	  data/litterature_francaise/Makefile \
+	  data/mysoginie/Makefile \
+	  data/personnalites/Makefile \
+	  data/philosophie/Makefile \
+	  data/politique/Makefile \
+	  data/proverbes/Makefile \
+	  data/religion/Makefile \
+	  data/sciences/Makefile)
