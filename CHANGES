@@ -1,4 +1,10 @@
-***** Sortie de fortunes-fr 0.01 *****
+
+
+***** Sortie de fortunes-fr 0.03 *****
+18/01/2018 Timotée Ruffenach <timruff@gmx.com>
+   * Conversion des fichiers textes en UTF-8.
+
+***** Sortie de fortunes-fr 0.02 *****
 09/05/2004  Aurelien Jarno <aurelien@jarno.name>
 	* Ajout du Guide du Debianiste Pervers, citations issues de 
 	  debian-french, debian-devel-french et debian-user-french
