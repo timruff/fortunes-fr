@@ -1,5 +1,6 @@
-README for fortunes-fr
-----------------------
+<h1 align="center">Fortunes-FR</h1>
+
+# ENGLISH INFORMATION
 
 This package contains French Fortunes for GNU/Linux. They are all in French 
 languages, so this package is interesting for people who know French language.
@@ -8,12 +9,7 @@ Therefore, any further information will be provided in French. However, please
 note that an English version of the license is provided in the file COPYING. 
 For installation instructions, please see the INSTALL file.
 
-Pour l'installation de ces citations, merci de se reporter au fichier INSTALL.
-
-
-------------------------------------------------------------------------------
- QU'EST CE QUE C'EST ?
-------------------------------------------------------------------------------
+## QU'EST CE QUE C'EST ?
 
 Le programme fortune, disponible sous GNU/Linux mais qui provient à l'origine 
 du monde BSD, permet d'afficher aléatoirement des citations.
@@ -22,9 +18,7 @@ fortunes-fr est une base de donnée pour le programme fortune, qui regroupe
 plus de 2100 citations en français dans des domaines variés allant de la 
 littérature au cinéma, de l'humour à la politique... Un exemple ?
 
-Ton bras est invaincu, mais non invincible.
-	-+- Pierre Corneille, Le Cid -+-
-
+<h4 align="center">Ton bras est invaincu, mais non invincible. -+- Pierre Corneille, Le Cid -+-</h4>
 
 Les citations sont réparties dans différents fichiers, qui correspondent
 chacun à une catégorie. Il est donc possible d'afficher uniquement certaines 
@@ -62,9 +56,7 @@ un mail (aurelien@aurel32.net). De même, si vous constatez des erreurs ou des
 imperfections, n'hésitez pas à me contacter.
 
 
-------------------------------------------------------------------------------
- UTILISATION DE FORTUNES-FR
-------------------------------------------------------------------------------
+## UTILISATION DE FORTUNES-FR
 
 Avant d'utiliser fortunes-fr, il faut tout d'abord l'installer. Pour celà, se
 reporter au fichier INSTALL.
@@ -72,29 +64,30 @@ reporter au fichier INSTALL.
 Une fois l'installation effectuée, il suffit d'executer le programme fortune 
 pour voir apparaître une citation :
 
+```bash
 $ fortune
-Les logiciels, c'est comme le sexe ; C'est meilleur quand c'est libre.
-	 -+- Linus Torvalds -+- 
+```
 
+<h4 align="center">Les logiciels, c'est comme le sexe ; C'est meilleur quand c'est libre. -+- Linus Torvalds -+- </h4>
 
 Cette citation provient du fichier informatique. Lorsque aucun fichier n'est 
 spécifié, la citation est choisie au hasard parmi tous les fichiers (en tenant 
 compte de leurs poids respectifs). Si au contraire on souhaite choisir une 
 citation d'un fichier spécifique, il est possible de le spécifier :
 
+```bash
 $ fortune droit
+```
 
-Les hommes naissent et demeurent libres et égaux en droits.
-Les distinctions sociales ne peuvent être fondées que sur l'utilité
-commune.
-	 -+- Déclaration des droits de l'homme et du citoyen 
-	     (26 août 1789) - Article I -+- 
-
+<h4 align="center">Les hommes naissent et demeurent libres et égaux en droits. Les distinctions sociales ne peuvent être fondées que sur l'utilité commune. -+- Déclaration des droits de l'homme et du citoyen (26 août 1789) - Article I -+- </h4>
 
 La liste de toutes les fichiers s'obtient avec l'option -f. Il est également 
 indiqué l'origine des fichiers et leur poids relatif de citations :
 
+```bash
 $ fortune -f
+```
+
 100,00% fr
     10,02% sciences
      3,89% religion
@@ -118,12 +111,10 @@ $ fortune -f
 Pour ceux qui veulent aller plus loin, la page man fortune(1) est d'une grande
 aide.
 
-------------------------------------------------------------------------------
- RAJOUTER DES CITATIONS
-------------------------------------------------------------------------------
+## RAJOUTER DES CITATIONS
 
 Par défaut, le programme fortune va chercher ses fichiers de citation à partir 
-des répertoires /usr/local/share/games/fortune ou /usr/share/games/fortunes. 
+des répertoires `/usr/local/share/games/fortune` ou `/usr/share/games/fortunes`. 
 Chaque groupe de citations est composé de deux fichiers, le fichier source 
 (qui contient les citations), et le fichier de données (qui contient la 
 longueur et la position des citations), de même nom que le fichier source avec
@@ -138,10 +129,7 @@ caractère %, sinon celle-ci ne sera pas prise en compte.
 Pour rajouter des citations, il faut donc éditer le fichier source, puis 
 mettre à jour le fichier de données à l'aide du programme strfile.
 
-
-------------------------------------------------------------------------------
- FORMATAGE DES CITATIONS
-------------------------------------------------------------------------------
+## FORMATAGE DES CITATIONS
 
 Cette partie décrit le format des citations dans la base de données, afin
 de rendre plus facile sa maintenance, mais ce ne sont pas des règles 
